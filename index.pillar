@@ -1,2 +1,7 @@
 ${inputFile:path=Chapters/AboutPillar.pillar}$
 
+
+
+
+${inputFile:path=Chapters/CheatSheet.pillar}$ 
+
