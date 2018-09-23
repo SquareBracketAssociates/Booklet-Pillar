@@ -1,6 +1,6 @@
 ${inputFile:path=Chapters/AboutPillar.pillar}$
 
-
+${inputFile:path=Chapters/GettingStarted.pillar}$
 
 
 ${inputFile:path=Chapters/CheatSheet.pillar}$ 
