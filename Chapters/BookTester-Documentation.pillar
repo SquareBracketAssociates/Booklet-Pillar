@@ -2,10 +2,11 @@
  
 What does it mean to ‘test a book’ and why would you do it? Testing a book means checking the code it displays is up to date. This can be done by checking if examples are correct or verifying that method and class definitions compile without raising an error in the last Pharo version. Being able to test a book means updating it more easily and therefore more frequently. On the long term, easier updates means more frequent updates but also a documentation improvement along with more ressources available for the community.
 
-The described features will be available in latest version. Latest Pillar will come with a book tester.
+Pillar will come with a book tester. The described features will be available in the future version. 
 
 
-!!! Typical codeblocks
+
+!!! Typical Codeblocks
 
 Pillar syntax allows you to write codeblocks, showing a part of code. The body of a codeblock allows one to display any part of code you might want to. For instance, example, method and class definitions can be tested.
 
@@ -14,11 +15,10 @@ Pillar syntax allows you to write codeblocks, showing a part of code. The body o
    [[[
 	   1 + 1
 	>>> 2
-]]]
+   ]]]
 ]]]
 
-!!!! Method definition
-
+!!!! Method Definition
 
 This codeblock presents a method definition.
 
@@ -29,9 +29,7 @@ This codeblock presents a method definition.
   ]]]
 ]]]
 
-!!!! Class definition
-
-
+!!!! Class Definition
 This codeblock presents a class definition.
 
 [[[
@@ -45,10 +43,19 @@ This codeblock presents a class definition.
 
 As we show next, using parameters we can indicate that the expression inside a codeblock should be validated
 
-!!! Testing codeblock examples 
+!!! Testing Codeblock Examples 
 
-Using the parameter ==example== and the ==>>>=== helps you to validate your examples.
-For example 
+Using the parameter ==example== and the ==>>>== helps you to validate your examples. The book tester follows the following pattern with only one ==>>>== per codeblock.
+
+[[[
+    [[[example=true
+       Action 
+    >>> ExpectedResult
+    ]]]
+]]]
+
+
+For example ==example=true== declares that there codeblock is a testable example. The marker ==>>>== is used to identify the result. 
 
 [[[
    [[[example=true
@@ -57,17 +64,9 @@ For example
    ]]]
 ]]]
 
-The book tester interprets the previous parametrized codeblock as an assertion 
+The book tester interprets the previous parametrized codeblock as the assertion 
  ==self assert: (3 + 4 ) equals: 7==. 
 
-The book tester follows the following pattern with only one ==>>>== per codeblock.
-
-[[[
-    [[[example=true
-       Action 
-    >>> ExpectedResult
-    ]]]
-]]]
 
 
 

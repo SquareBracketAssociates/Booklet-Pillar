@@ -158,7 +158,7 @@ This script installs packages to manage fonts and better LaTeX rendering such as
 
 
 
-!! A First Pillar Project
+!!! A First Pillar Project
 
 A Pillar project is a directory containing several ==.pillar== files with your content, a ==pillar.conf== configuration file and a ==_support== directory containing several template-related files which will manage the look-and-feel of your document.
 All project structure is setup by Pillar itself, you do not need to do it manually.
