@@ -15,7 +15,10 @@ The first part of this section covers how to download an already built version o
 !!!! Build Requirements
 
 Building Pillar from sources requires that you have some dependencies installed in your system:
-- ""Git"": a Git installation is required to get the Pillar repository from ==git@github.com:pillar-markup/pillar.git==.
+- ""Git"": a Git installation is required to get the Pillar repository from:
+[[[
+git@github.com:pillar-markup/pillar.git
+]]]
 - ""wget"": is required to do several file downloads. For OSX users, you might need to install ==wget== via ==brew== following for example the following instructions:
 
 [[[
@@ -223,7 +226,7 @@ your_project\
 
 !!!! Building a Single File
 
-Pillar generates all ==.pillar== files he finds in your project by default.
+Pillar generates all ==.pillar== files that it finds in your project by default.
 We can instruct it otherwise by specifying the files to build as argument.
 For example, if you want to build only ==index.pillar== to html you can use the ==pillar build== command as follows:
 
@@ -253,10 +256,6 @@ $ git clone git@github.com:[your_ursername]/[your_repository].git
 $ cp path_to_your_project
 ]]]
 
-[[[
-cd Booklet-PublishingAPillarBooklet
-]]]
-
 
 !!!! Versioning your Book
 
@@ -264,12 +263,11 @@ Now to version simply you book you should version all the files except ==_result
 Later we will show you how to add travis and bintray support for automatic compilation so that you do not need to install locally LaTeX on your machine. 
 
 [[[
-$ git add pillar.conf
-$ git add _support
-$ git add Chapters
-$ git add book.pillar
+git add _support
+git add pillar.conf
+git add index.pillar
+...
 ]]]
-
 !!!! Adding a .gitignore
 
 Not all the downloaded files are worth versionning. We suggest the following .gitignore configuration. 

@@ -5,3 +5,7 @@ ${inputFile:path=Chapters/GettingStarted.pillar}$
 
 ${inputFile:path=Chapters/CheatSheet.pillar}$ 
 
+${inputFile:path=Chapters/BookTester-Documentation.pillar}$ 
+
+
+
